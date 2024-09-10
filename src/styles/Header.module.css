@@ -1,0 +1,85 @@
+.header{
+   position: fixed;
+   display: block;
+   color: white;
+   width: 100%;
+   top: 0;
+   font-size: 1.2vw;
+   z-index: 1;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.hideHeader {
+    transform: translateY(-100%);
+  }
+  
+  .showHeader {
+    transform: translateY(0);
+  }
+
+  .addBackground {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+.header > nav{
+    display: flex;
+    align-items: center;
+    padding: 1% 0 1% 0;
+}
+.header > nav > div{
+    width: 60%;
+    margin-left: 2%;
+}
+.header > nav > div > h1{
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+}
+.header > nav > ul{
+    width: 40%;
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    margin: 0; 
+    font-size: 1em;
+}
+
+.header > nav > ul > li{
+    margin: 0 5% 0 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 1.5em;
+    overflow: hidden;
+    font-size: 0.9em;
+}
+
+.header > nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid #adadad;
+    border-radius: 1.1em;
+    padding: 0.5em;
+    position: relative;
+    z-index: 2; /* Đảm bảo nội dung của a nằm trên lớp after */
+    font-size: 1em;
+}
+
+.header > nav > ul > li > a::after {
+    content: '';
+    position: absolute;
+    background-color: #ffa200;
+    border-radius: 1em;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: -100%; /* Bắt đầu từ ngoài bên trái */
+    z-index: -1; /* Đảm bảo lớp này nằm sau nội dung của a */
+    transition: 0.3s ease-in-out; /* Sử dụng left để di chuyển lớp after */
+}
+.header > nav > ul > li > a:hover{
+    color: black;
+}
+
+.header > nav > ul > li > a:hover::after {
+    left: 0; /* Khi hover, lớp after sẽ di chuyển từ trái sang phải */
+}

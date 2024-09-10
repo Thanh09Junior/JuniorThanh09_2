@@ -1,0 +1,101 @@
+/* src/styles/AboutSection.module.css */
+.aboutSection {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.4vw;
+    overflow: hidden;
+  }
+  .fadeIn {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+  }
+  
+  .fadeInVisible {
+    opacity: 1;
+  }
+  
+  /* Animation for sliding up */
+  .slideUp {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+  }
+  
+  .slideUpVisible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .Empty{
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .aboutSection h2 {
+    margin-top: 0;
+  }
+
+  .aboutSection > div:last-child{
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+  }
+
+
+.Main_section{
+  padding-top: 10%;
+  padding-bottom: 12%;
+  display: flex;
+  text-align: justify;
+}
+
+.Main_section > div > hr{
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+
+.Main_section > div:not(:nth-child(1)){
+  width: 50%;
+}
+
+.Main_section > div:nth-child(2) > div:first-child > h2{
+  margin-bottom: 2%;
+}
+
+.Main_section > div:nth-child(2) > div:first-child > ul > li{
+  margin-bottom: 2%;
+}
+
+.Main_section > div:nth-child(1){
+  width: 20%;
+  margin-left: 2%;
+  color: #ff8400;
+}
+
+.Main_section > div:last-child{
+  width: 20%; 
+  margin-left: 3%;
+}
+
+.Main_section > div:last-child > img
+{
+  width: 110%;
+}
+
+
+.Slogan{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Slogan div{
+  width: 40%;
+}
+
+.Slogan > div > h2{
+  margin-bottom: 4%;
+}
+
+.imageContainer > div > p{
+  text-align: center;
+}

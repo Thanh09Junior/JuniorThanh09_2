@@ -1,0 +1,189 @@
+/* src/styles/GoalSection.module.css */
+.goalSection {
+   background-color: black;
+   color: white;
+   font-size: 1vw;
+   position: relative;
+  }
+  .goalSection > div:first-child{
+    background-color: white;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .goalSection > div:first-child > p{
+    margin-left: 24%;
+    margin-right: 5%;
+    font-size: 2.6em;
+    padding-top: 1%;
+    color: black;
+    text-align: justify;
+  }
+
+  .goalSection > div:first-child > p:last-child{
+    text-align: right;
+  }
+  
+
+  .goalSection > div:nth-child(2){
+    display: flex;
+    margin-left: 1.5%;
+    padding-top: 5%;
+    height: 50em;
+  }
+
+  .goalSection > div:nth-child(2) > div:first-child{
+    width: 20%;
+    font-size: 1em;
+  }
+
+  .goalSection > div:nth-child(2) > div:first-child > h2{
+    font-size: 2em;
+    margin-bottom: 3%;
+    color: #ffa200 !important;
+  }
+
+  .goalSection > div:nth-child(2) > div:first-child > p{
+    font-size: 1.2em;
+  }
+
+  .goalSection > div:nth-child(2) > div:nth-child(2){
+    width: 53%;
+    font-size: 1.5vw;
+  }
+  .goalSection > div:nth-child(2) > div:nth-child(3){
+    width: 25%;
+    font-size: 2em;
+    text-align: justify;
+  }
+
+  .goalSection > div:nth-child(2) > div:nth-child(3) > hr{
+    margin-bottom: 8%;
+    margin-top: 2%;
+  }
+
+  .ikigaiDiagram {
+    position: relative;
+    width: 17em;
+    height: 17em;
+    margin-top: 10%;
+    margin-left: 22%;
+    border: 1px solid white;
+    border-radius: 20em;
+    transition: 0.3s ease-in-out;
+  }
+
+  .ikigaiDiagram:hover{
+    border-color: #00a2f3;
+  }
+  
+  .circle {
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .circle1 {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensure correct stacking */
+  }
+  
+  .circle2 {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1; /* Ensure correct stacking */
+  }
+  
+  .circle3 {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1; /* Ensure correct stacking */
+  }
+  
+  .circle4 {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensure correct stacking */
+  }
+  
+  .centerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00a2f3;
+    border-radius: 50%;
+    width: 4.5em;
+    height: 4.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    z-index: 1; /* Ensure it's on top of the circles */
+  }
+  
+  .infoSection {
+    width: 100%;
+    text-align: justify;
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #fff;
+    position: relative;
+    z-index: 3; /* Ensure it's above everything */
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transform: translateX(-20px); /* Đưa thông tin ra ngoài khỏi màn hình */
+  }
+
+  .infoSection.fadeIn {
+    opacity: 1;
+    transform: translateX(0); /* Trở lại vị trí ban đầu */
+  }
+
+
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Màu nền mờ */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0; /* Ensure it's behind the circles and info section */
+  }
+  
+  .overlayActive {
+    opacity: 1;
+  }
+  
+  .circle:not(.hovered) {
+    background-color: rgba(255, 255, 255, 0.2);
+
+  }
+  
+  .circle.hovered {
+    opacity: 1;
+  }
+  
+  .circle:hover,
+  .circle.hovered {
+    background-color: rgba(0, 123, 255, 0.7);
+  }
+
+  

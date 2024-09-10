@@ -1,0 +1,75 @@
+.FAQ{
+    background-color: black;
+    padding-left: 2%;
+    padding-bottom: 12%;
+    font-size: 1.2vw;
+}
+
+.FAQ > div:first-child{
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.FAQ > div:first-child > h2{
+    color: #ffa200;
+    width: 20%;
+}
+.FAQ > div:first-child > div {
+    width: 70%;
+}
+
+.FAQ > div:first-child > div > h2{
+    color: white;
+    width: 60%;
+    font-size: 1.8em;
+}
+
+
+
+.FAQ > div:last-child > div{
+    color: white;
+    margin-bottom: 1%;
+}
+
+.FAQ > div:last-child > div > ul{
+    display: flex;
+    padding: 0.2em;
+    transition: 0.3s ease-in-out;
+}
+
+
+.FAQ > div:last-child > div > ul > li{
+    width: 20%;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    transform: 0.2s ease-in-out;
+}
+
+.FAQ > div:last-child > div > ul:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.FAQ > div:last-child > div > ul:hover > li:first-child{
+    color: #ffa200 !important;
+}
+
+.FAQ > div:last-child > div > ul:hover > li:last-child{
+    color: #ffa200 !important;
+}
+
+
+.FAQ > div:last-child > div > ul > li:first-child{
+    color: rgb(120, 120, 120) !important
+}
+
+.FAQ > div:last-child > div > ul > li:last-child{
+    width: 50%;
+    margin-left: 7%;
+    color: rgb(120, 120, 120) !important
+}
+
+.FAQ  > div:last-child > div > h3{
+    margin-left: 1%;
+    margin-top: 2%;
+    font-size: 1.2em;
+}
