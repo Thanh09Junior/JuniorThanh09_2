@@ -1,4 +1,5 @@
 // src/app/layout.tsx
+'use client';
 import React, { useEffect } from 'react';
 import '@/app/globals.css'; // Import global styles
 import Header from '../components/Header';
