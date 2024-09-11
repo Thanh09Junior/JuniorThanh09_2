@@ -31,7 +31,8 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         };
       }, [])
   return (
-    <html lang="vi" title="Website portfolio của Junior Thành">
+    <html lang="vi">
+      <title>Junior Thành</title> 
       <AppHead />
       <body>
       <Preloader />
