@@ -1,5 +1,6 @@
 // src/app/Head.tsx
 import React from 'react';
+import Head from 'next/head'; // Import the Head component from next/head
 
 const description = "Xin chào! Mình là Junior Thành, hiện đang là sinh viên năm 2 tại Đại học Mở TP.Hồ Chí Minh. Mình đang theo học ngành CNTT và mình mong rằng chúng ta có thể cùng nhau học tập và phát triển nhé.";
 
@@ -20,7 +21,7 @@ const copyright = "© 2024 Junior Thành, Mọi bản quyền được bảo lư
 const AppHead = () => {
  const keywordsContent = keywords.join(", ");
   return (
-    <head>
+    <Head>
       <meta property="og:site_name" content="Junior Thành" />
       <title>Junior Thành</title> 
       <meta charSet="UTF-8" />
@@ -48,8 +49,8 @@ const AppHead = () => {
       <meta name="theme-color" content="#000000" />
 
       <link rel="icon" href="/icon.png" />
-      <link rel="preload" href="//code.tidio.co/vzjsg9odki0uznonmz8yndf4ipecdacg.js" as="script"></link>
-    </head>
+      <link rel="preload" href="//code.tidio.co/vzjsg9odki0uznonmz8yndf4ipecdacg.js" as="script" />
+    </Head>
   );
 };
 
