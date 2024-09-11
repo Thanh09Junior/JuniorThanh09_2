@@ -22,7 +22,6 @@ const AppHead = () => {
  const keywordsContent = keywords.join(", ");
   return (
     <Head>
-      <head>
       <meta property="og:site_name" content="Junior Thành" />
       <title>Junior Thành</title> 
       <meta charSet="UTF-8" />
@@ -51,7 +50,6 @@ const AppHead = () => {
 
       <link rel="icon" href="/icon.png" />
       <link rel="preload" href="//code.tidio.co/vzjsg9odki0uznonmz8yndf4ipecdacg.js" as="script" />
-      </head>
     </Head>
   );
 };
