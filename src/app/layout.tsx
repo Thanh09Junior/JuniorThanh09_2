@@ -17,12 +17,11 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           easing: 'ease-out-quad',
           duration: 1000,
         });
-
-
         const script = document.createElement('script');
         script.src = "//code.tidio.co/vzjsg9odki0uznonmz8yndf4ipecdacg.js"; // Thay đổi URL theo mã nhúng của Lyro AI
         script.async = true;
         document.body.appendChild(script);
+        
     
         return () => {
           document.body.removeChild(script);

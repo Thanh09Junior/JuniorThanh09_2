@@ -4,7 +4,7 @@ import styles from '@/styles/AboutSection.module.css'; // Import styles specific
 
 const AboutSection = () => {
   return (
-    <section id="home" className={styles.aboutSection} >
+    <section id="home" className={styles.aboutSection}>
       <div className={styles.Empty}>
       </div>
       <div className={styles.Main_section} id = "about">

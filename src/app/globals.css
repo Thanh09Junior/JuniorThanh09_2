@@ -19,7 +19,11 @@
 html::-webkit-scrollbar {
   display: none;
 }
-
+/* globals.css or specific Locomotive Scroll CSS file */
+[data-scroll-container] {
+  overflow: auto; /* Ensure scroll container is scrollable */
+  position: relative; /* Necessary for Locomotive Scroll */
+}
 
 body {
   margin: 0;

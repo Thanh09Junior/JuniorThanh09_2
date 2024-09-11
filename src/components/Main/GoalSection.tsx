@@ -1,10 +1,13 @@
 'use client'
-import React,  { useState, useEffect} from 'react';
+import React,  { useState, useEffect, useRef }from 'react';
 import styles from '@/styles/GoalSection.module.css'; // Import styles specific to this section
 
 const GoalSection = () => {
   const [hoveredSection, setHoveredSection] = useState<"job" | "skills" | "language" | "communication" | null>(null);
   const [showInfo, setShowInfo] = useState(false);
+  const [quoteVisible, setQuoteVisible] = useState(false);
+  const quoteRef = useRef<HTMLDivElement>(null);
+
 
   
   const info = {
@@ -22,9 +25,30 @@ const GoalSection = () => {
     }
   }, [hoveredSection]);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setQuoteVisible(entry.isIntersecting); // Update visibility status based on intersection
+      },
+      {
+        threshold: 0.2, // Trigger when 30% of the element is visible
+      }
+    );
+
+    if (quoteRef.current) {
+      observer.observe(quoteRef.current);
+    }
+
+    return () => {
+      if (quoteRef.current) {
+        observer.unobserve(quoteRef.current); // Clean up observer
+      }
+    };
+  }, []);
+
   return (
     <section id="goal" className={styles.goalSection} >
-      <div>
+      <div ref={quoteRef} className={`${styles.quoteSection} ${quoteVisible ? styles.visible : ''}`}>
           <p data-aos="fade-right" data-aos-duration="1000">"Mục tiêu cá nhân là thứ gì đó có thể thúc đẩy một người đi tiếp trong hành trình của ước mơ và hi vọng. Nó không mãnh liệt như kiên trì hay bộc phát như nội lực
             nhưng nó vẫn mang một ý nghĩa nào đó của riêng nó nhằm khẳng định lấy bản thân mình"</p>
             <p data-aos="fade-right" data-aos-duration="1000">- Junior Thành -</p>

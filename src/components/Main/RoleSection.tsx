@@ -1,12 +1,37 @@
 // src/components/Main/RoleSection.tsx
-import React from 'react';
-import styles from '@/styles/RoleSection.module.css'; // Import styles specific to this section
+'use client'
+import React, { useEffect, useRef, useState } from 'react';
+import styles from '@/styles/RoleSection.module.css';
 
 
 const RoleSection = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting); // Update visibility status based on intersection
+      },
+      {
+        threshold: 0.2, // Trigger when 10% of the element is visible
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current); // Clean up observer
+      }
+    };
+  }, []);
+
   return (
     <section id="role" className= {styles.nghiepvu} >
-      <div className={styles.roleSection}>
+      <div className={`${styles.roleSection} ${isVisible ? styles.visible : ''}`} ref={sectionRef}>
         <p  data-aos="fade-right" data-aos-duration="1000">"Khi nghiệp vụ không chỉ nằm ở sự chuyên nghiệp mà còn là sự phá cách. Giữa bàn cờ cuộc sống hãy dựng ra sân khấu đặc sắc nhất để làm nên một tác phẩm của riêng mình"</p>
         <p data-aos="fade-right" data-aos-duration="1000">- Junior Thành -</p>
       </div>

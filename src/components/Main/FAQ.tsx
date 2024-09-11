@@ -86,6 +86,19 @@ const FAQ = () => {
             <div>
                  <h3>P/S: Ngoài ra còn nhiều thông tin khác nữa. Nếu bạn có thắc mắc thì đừng ngại inbox mình qua Facebook hay Linkedin nhé.</h3>
             </div>
+            <div className={styles.SchoolLogo} data-aos="fade-up" data-aos-duration="1000">
+                <div>
+                    <img src="/Logo-DH-Mo-TPHCM-OU.webp"/>
+                </div>
+                <p>Sinh viên đại học Mở TP.Hồ Chí Minh</p>
+                <p>Chúc mọi người một ngày làm việc năng suất</p>
+                <div>
+                    <a href="https://ou.edu.vn" target="_blank">HCMC - OU</a>
+                    <a href="https://www.oucommunity.dev/" target="_blank">Sổ tay sinh viên</a>
+                    <a href="https://www.facebook.com/profile.php?id=100066781932277" target="_blank">Fanpage</a>
+                    <a href="https://tuyensinh.ou.edu.vn/" target="_blank">Tuyển sinh</a>
+                </div>
+            </div>
       </div>
     </section>
   );

@@ -1,5 +1,7 @@
 /* src/styles/RoleSection.module.css */
 
+
+
 .nghiepvu{
   font-size: 1vw;
 }
@@ -10,7 +12,13 @@
     border-bottom: 1px solid #ddd;
     padding-top: 10%;
     padding-bottom: 15%;
+    opacity: 0.5; /* Initially faded */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
   }
+  .roleSection.visible {
+    opacity: 1; /* Fully visible when in view */
+  }
+  
   
   .roleSection p {
     margin-left: 22%;

@@ -73,3 +73,67 @@
     margin-top: 2%;
     font-size: 1.2em;
 }
+
+
+.SchoolLogo{
+    border: 1px solid white;
+   text-align: center;
+   margin-right: 2%;
+   margin-top: 8%;
+   margin-bottom: 10%;
+   font-size: 1.5vw;
+   padding: 8em;
+   border-radius: 1em;
+}
+
+.SchoolLogo > div {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 3%;
+}
+
+.SchoolLogo > div > img{
+    width: 25%;
+}
+
+.SchoolLogo > p:nth-child(2){
+    font-size: 1.3em;
+}
+
+.SchoolLogo > p:nth-child(3){
+    font-size: 1.8em;
+}
+
+.SchoolLogo > div:last-child{
+    margin-top: 2.5%;
+}
+
+.SchoolLogo > div:last-child > a{
+    margin-right: 3%;
+    margin-left: 3%;
+    color: white;
+    border: 1px solid white;
+    border-radius: 1.5em;
+    padding: 10px;
+    position: relative;
+}
+
+.SchoolLogo > div:last-child > a::after {
+    content: '';
+    position: absolute;
+    background-color: #ffa600;
+    border-radius: 1em;
+    width: 0%;
+    top: 0;
+    bottom: 0;
+    left: 0; /* Bắt đầu từ ngoài bên trái */
+    z-index: -1; /* Đảm bảo lớp này nằm sau nội dung của a */
+    transition: 0.1s ease-in-out; /* Sử dụng left để di chuyển lớp after */
+}
+.SchoolLogo > div:last-child > a:hover{
+    color: black;
+}
+
+.SchoolLogo > div:last-child > a:hover::after {
+   width: 100%;
+}

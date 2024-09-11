@@ -1,4 +1,24 @@
 /* src/styles/GoalSection.module.css */
+
+.infoSection {
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+}
+
+.infoSection.fadeIn {
+  opacity: 1; /* Fully visible when active */
+}
+
+/* Add styles for quote section */
+.quoteSection {
+  opacity: 0.5; /* Initially faded */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+}
+
+.quoteSection.visible {
+  opacity: 1; /* Fully visible when in view */
+}
+
 .goalSection {
    background-color: black;
    color: white;
