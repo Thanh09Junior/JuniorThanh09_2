@@ -54,8 +54,8 @@ const HomeSection = () => {
 
             <div>
               <h2>Châm ngôn</h2>
-              <p>"Gió đẩy chiều nào thì ta theo chiều đó. Miễn đến cuối con đường
-                ta được là chính mình thì đó là điều chân quý nhất rồi."
+              <p>&quot;Gió đẩy chiều nào thì ta theo chiều đó. Miễn đến cuối con đường
+                ta được là chính mình thì đó là điều chân quý nhất rồi.&quot;
               </p>
               <div className= {styles.Button}>
                 <p>Thời gian:  {currentTime}</p>

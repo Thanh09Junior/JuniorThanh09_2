@@ -32,7 +32,7 @@ const RoleSection = () => {
   return (
     <section id="role" className= {styles.nghiepvu} >
       <div className={`${styles.roleSection} ${isVisible ? styles.visible : ''}`} ref={sectionRef}>
-        <p  data-aos="fade-right" data-aos-duration="1000">"Khi nghiệp vụ không chỉ nằm ở sự chuyên nghiệp mà còn là sự phá cách. Giữa bàn cờ cuộc sống hãy dựng ra sân khấu đặc sắc nhất để làm nên một tác phẩm của riêng mình"</p>
+        <p  data-aos="fade-right" data-aos-duration="1000">&quot;Khi nghiệp vụ không chỉ nằm ở sự chuyên nghiệp mà còn là sự phá cách. Giữa bàn cờ cuộc sống hãy dựng ra sân khấu đặc sắc nhất để làm nên một tác phẩm của riêng mình&quot;</p>
         <p data-aos="fade-right" data-aos-duration="1000">- Junior Thành -</p>
       </div>
       <div className={styles.roles}>

@@ -1,6 +1,5 @@
 // src/app/Head.tsx
 import React from 'react';
-import Head from 'next/head';
 
 const description = "Xin chào! Mình là Junior Thành, hiện đang là sinh viên năm 2 tại Đại học Mở TP.Hồ Chí Minh. Mình đang theo học ngành CNTT và mình mong rằng chúng ta có thể cùng nhau học tập và phát triển nhé.";
 

@@ -27,8 +27,8 @@ const AboutSection = () => {
             <div className={styles.Slogan}>
               <div  data-aos="fade-right" data-aos-duration="1500">
                 <h2>Câu nói của mình</h2>
-                <p>"Chúng ta có thể không thay đổi được quá khứ. Nhưng chúng ta có quyền tạo nên sự khác biệt 
-                  trong tương lai. Hãy tin tưởng bản thân khi bản thân cần nhất" </p>
+                <p>&quot;Chúng ta có thể không thay đổi được quá khứ. Nhưng chúng ta có quyền tạo nên sự khác biệt 
+                  trong tương lai. Hãy tin tưởng bản thân khi bản thân cần nhất&quot; </p>
               </div>
               <div  data-aos="fade-left" data-aos-duration="1500">
                 <h2>Podcast - Blogger</h2>

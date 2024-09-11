@@ -49,8 +49,8 @@ const GoalSection = () => {
   return (
     <section id="goal" className={styles.goalSection} >
       <div ref={quoteRef} className={`${styles.quoteSection} ${quoteVisible ? styles.visible : ''}`}>
-          <p data-aos="fade-right" data-aos-duration="1000">"Mục tiêu cá nhân là thứ gì đó có thể thúc đẩy một người đi tiếp trong hành trình của ước mơ và hi vọng. Nó không mãnh liệt như kiên trì hay bộc phát như nội lực
-            nhưng nó vẫn mang một ý nghĩa nào đó của riêng nó nhằm khẳng định lấy bản thân mình"</p>
+          <p data-aos="fade-right" data-aos-duration="1000">&quot;Mục tiêu cá nhân là thứ gì đó có thể thúc đẩy một người đi tiếp trong hành trình của ước mơ và hi vọng. Nó không mãnh liệt như kiên trì hay bộc phát như nội lực
+            nhưng nó vẫn mang một ý nghĩa nào đó của riêng nó nhằm khẳng định lấy bản thân mình&quot;</p>
             <p data-aos="fade-right" data-aos-duration="1000">- Junior Thành -</p>
       </div>
       <div data-aos="fade-up" data-aos-duration="1000">
@@ -98,9 +98,9 @@ const GoalSection = () => {
           </div>
         </div>
         <div>
-          <p>"Học, học nữa, học mãi. Hãy mang trong mình một mục tiêu cao cả, một nhiệt huyết phấn đấu tuổi thanh xuân vì lý tưởng, ước mơ và hoài bão."</p>
+          <p>&quot;Học, học nữa, học mãi. Hãy mang trong mình một mục tiêu cao cả, một nhiệt huyết phấn đấu tuổi thanh xuân vì lý tưởng, ước mơ và hoài bão.&quot;</p>
           <hr/>
-          <p>"Nếu không có mục tiêu thì hãy có động lực. Nếu không có động lực thì hãy là chính mình, còn nếu không thể là chính mình thì hãy tìm chính mình."</p>
+          <p>&quot;Nếu không có mục tiêu thì hãy có động lực. Nếu không có động lực thì hãy là chính mình, còn nếu không thể là chính mình thì hãy tìm chính mình.&quot;</p>
           <hr/>
         </div>
       </div>
