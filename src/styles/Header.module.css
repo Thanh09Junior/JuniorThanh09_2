@@ -9,6 +9,37 @@
    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.musicControls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .musicButton {
+    background: transparent; /* Remove the button background */
+    border: none; /* Remove border */
+    color: white; /* Set the icon color to white */
+    font-size: 1.2em; /* Adjust icon size */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .musicButton:hover {
+    transform: scale(1.1); /* Optional: Add a slight zoom on hover */
+  }
+  
+  .musicButton:focus {
+    outline: none; /* Remove outline when focused */
+  }
+  
+
+.header > nav > div:first-child{
+    display: flex;
+}
+
+.header > nav > div:first-child > div{
+    margin-left: 2%;
+    color: white;
+}
 
 .hideHeader {
     transform: translateY(-100%);

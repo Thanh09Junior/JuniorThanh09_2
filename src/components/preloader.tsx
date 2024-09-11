@@ -112,7 +112,7 @@ const Preloader = () => {
       {isDone ? (
         <p className={styles.doneText}>Done</p>
       ) : (
-        <p className={styles.progressText}>{Math.round(progress)}%</p>
+        <p className={styles.progressText}>{Math.round(progress)}% - Quá trình có thể mất vài phút</p>
       )}
     </div>
   );

@@ -21,8 +21,11 @@ const AppHead = () => {
  const keywordsContent = keywords.join(", ");
   return (
     <head>
+      <meta property="og:site_name" content="Junior Thành" />
       <title>Junior Thành</title> 
       <meta charSet="UTF-8" />
+      <link rel="canonical" href="https://juniorthanh09.com/" />
+      <meta property="og:locale" content="vi_VN" />
       <meta name="description" content={description}/>
       <meta name="keywords" content={keywordsContent} />
       <meta name="author" content="Junior Thành" />
@@ -31,21 +34,21 @@ const AppHead = () => {
 
       <meta property="og:title" content="Junior Thành" />
       <meta property="og:description" content={social_Description} />
-      <meta property="og:image" content="/path/to/image.jpg" />
-      <meta property="og:url" content="https://www.example.com/page" />
+      <meta property="og:image" content="/icon.png" />
+      <meta property="og:url" content="https://juniorthanh09.com/" />
       <meta property="og:type" content="website" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Junior Thành" />
       <meta name="twitter:description" content={social_Description} />
-      <meta name="twitter:image" content="/path/to/image.jpg" />
+      <meta name="twitter:image" content="/icon.png" />
 
       <meta name="robots" content="index, follow" />
       <meta httpEquiv="refresh" content="10000" />
+
       <meta name="theme-color" content="#000000" />
 
-      <link rel="icon" href="/favicon.ico" />
-      <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+      <link rel="icon" href="/icon.png" />
     </head>
   );
 };
