@@ -32,9 +32,11 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <AppHead />
       <body>
       <Preloader />
+        <div>
         <Header />
           {children}
         <Footer />
+        </div>
       </body>
     </html>
   );

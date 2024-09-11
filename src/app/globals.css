@@ -2,7 +2,7 @@
 @import url('@/styles/fonts.css');
 @import url('@/styles/fontawesome.css');
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 800px) {
   html {
     display: none; /* Ẩn toàn bộ nội dung */
   }

@@ -27,8 +27,8 @@ const Footer = () => {
       <div>
         <div>
           <h2>Junior Thành</h2>
-          <p>Vậy đến đây là kết thúc rồi. Qua thông tin trên thì các bạn có thể hiểu
-            thêm về mình và cũng như là tìm ra được mục tiêu cho riêng mình nhé. Chúc các đọc giả
+          <p>Vậy đến đây là kết thúc rồi. Qua thông tin trên, thì các bạn có thể hiểu
+            thêm về mình và cũng như tìm ra được mục tiêu cho riêng mình nhé. Chúc các độc giả
             và người theo dõi của mình một ngày tốt lành nhé!
           </p>
           <div className={styles.button}> 

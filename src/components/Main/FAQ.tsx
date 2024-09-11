@@ -80,17 +80,17 @@ const FAQ = () => {
                 <ul>
                     <li>[ 10 ]</li>
                     <li>Mạng xã hội?</li>
-                    <li>[ Hiện tại, mình hoạt động trên nền tảng Facebook và Linkedin ]</li>
+                    <li>[ Hiện tại, mình hoạt động trên nền tảng Facebook và LinkedIn ]</li>
                 </ul>
             </div>
             <div>
-                 <h3>P/S: Ngoài ra còn nhiều thông tin khác nữa. Nếu bạn có thắc mắc thì đừng ngại inbox mình qua Facebook hay Linkedin nhé.</h3>
+                 <h3>P/S: Ngoài ra còn nhiều thông tin khác nữa. Nếu bạn có thắc mắc thì đừng ngại inbox mình qua Facebook hay LinkedIn nhé.</h3>
             </div>
             <div className={styles.SchoolLogo} data-aos="fade-up" data-aos-duration="1000">
                 <div>
                     <img src="/Logo-DH-Mo-TPHCM-OU.webp"/>
                 </div>
-                <p>Sinh viên đại học Mở TP.Hồ Chí Minh</p>
+                <p>Sinh viên trường đại học Mở TP.Hồ Chí Minh</p>
                 <p>Chúc mọi người một ngày làm việc năng suất</p>
                 <div>
                     <a href="https://ou.edu.vn" target="_blank">HCMC - OU</a>

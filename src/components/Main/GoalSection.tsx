@@ -11,10 +11,10 @@ const GoalSection = () => {
 
   
   const info = {
-    job: "Mình sẽ tiếp tục cải thiện và phát triển kỹ năng chuyên ngành, nâng cao khả năng làm việc hiệu quả và cũng như rèn luyện tư duy phân tích vấn đề để đưa ra phương pháp giải quyết tốt nhất cho công việc và dự án",
+    job: "Mình sẽ tiếp tục cải thiện và phát triển kỹ năng chuyên ngành, nâng cao khả năng làm việc hiệu quả, cũng như rèn luyện tư duy phân tích vấn đề để đưa ra phương pháp giải quyết tốt nhất cho công việc và dự án",
     skills: "Phát triển kỹ năng sống và kỹ năng mềm là một trong những yếu tố để làm nên một cuộc sống ổn định. Nên mình sẽ không ngừng học hỏi và cải thiện kỹ năng của mình để trở thành tốt hơn qua từng ngày.",
     language: "Kỹ năng ngôn ngữ hiện nay có thể được xem là một lợi thế rất lớn. Nó tạo ra cho mình nhiều cơ hội để học tập và phát triển cũng như là tìm hiểu thêm văn hoá mới, con người mới",
-    communication: "Giao tiếp hiệu quả là nền tảng của mọi mối quan hệ và hợp tác thành công. Đây có thể nói là mảng mình yếu nhất trong tất cả và hiện tại mình đang nổ lực cải thiện mảng này sao cho phù hợp nhất đối với bản thân và cộng đồng."
+    communication: "Giao tiếp hiệu quả là nền tảng của mọi mối quan hệ và hợp tác thành công. Đây có thể nói là mảng mình yếu nhất trong tất cả và hiện tại mình đang nỗ lực cải thiện mảng này sao cho phù hợp nhất đối với bản thân và cộng đồng."
   };
   
   useEffect(() => {
@@ -50,7 +50,7 @@ const GoalSection = () => {
     <section id="goal" className={styles.goalSection} >
       <div ref={quoteRef} className={`${styles.quoteSection} ${quoteVisible ? styles.visible : ''}`}>
           <p data-aos="fade-right" data-aos-duration="1000">&quot;Mục tiêu cá nhân là thứ gì đó có thể thúc đẩy một người đi tiếp trong hành trình của ước mơ và hi vọng. Nó không mãnh liệt như kiên trì hay bộc phát như nội lực
-            nhưng nó vẫn mang một ý nghĩa nào đó của riêng nó nhằm khẳng định lấy bản thân mình&quot;</p>
+            nhưng nó vẫn mang một ý nghĩa nào đó của riêng nó nhằm khẳng định lấy bản thân mình.&quot;</p>
             <p data-aos="fade-right" data-aos-duration="1000">- Junior Thành -</p>
       </div>
       <div data-aos="fade-up" data-aos-duration="1000">
