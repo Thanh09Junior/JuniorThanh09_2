@@ -48,3 +48,8 @@ footer{
 audio{
   background: transparent;
 }
+
+img{
+  width: 100%;
+  height: 80%;
+}

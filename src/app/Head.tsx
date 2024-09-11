@@ -44,11 +44,11 @@ const AppHead = () => {
       <meta name="twitter:image" content="/icon.png" />
 
       <meta name="robots" content="index, follow" />
-      <meta httpEquiv="refresh" content="10000" />
 
       <meta name="theme-color" content="#000000" />
 
       <link rel="icon" href="/icon.png" />
+      <link rel="preload" href="//code.tidio.co/vzjsg9odki0uznonmz8yndf4ipecdacg.js" as="script"></link>
     </head>
   );
 };

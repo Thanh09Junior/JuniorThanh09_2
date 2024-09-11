@@ -122,7 +122,7 @@ const Header = () => {
                 <h1>Junior Thành</h1>
                 <div className={styles.musicControls}>
                   {/* Music Control Buttons */}
-                  <button onClick={togglePlayPause} className={styles.musicButton}>
+                  <button onClick={togglePlayPause} className={styles.musicButton} aria-label="Music player">
                     <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
                   </button>
                   {/* First audio track */}

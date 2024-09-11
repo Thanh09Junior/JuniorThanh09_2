@@ -5,9 +5,12 @@ import styles from '@/styles/Footer.module.css'; // Import styles specific to th
 
 const Footer = () => {
   const [currentYear, setCurrentYear] = useState<number>(new Date().getFullYear());
-  const [currentTime, setCurrentTime] = useState<string>(() => new Date().toLocaleTimeString());
+  const [currentTime, setCurrentTime] = useState<string | null>(null); // Start with null
 
   useEffect(() => {
+    // Set the year on mount
+    setCurrentYear(new Date().getFullYear());
+
     // Set an interval to update the time every second
     const intervalId = setInterval(() => {
       setCurrentTime(new Date().toLocaleTimeString());
@@ -17,10 +20,6 @@ const Footer = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  // Ensure the current year is only set on the client
-  useEffect(() => {
-    setCurrentYear(new Date().getFullYear());
-  }, []);
 
   return (
     <footer className={styles.footer}>
@@ -57,8 +56,8 @@ const Footer = () => {
       </div>
       <hr/>
       <div>
-          <p> © {currentYear} Junior Thành. Mọi quyền được bảo lưu</p>
-          <p>Thời gian hiện tại: {currentTime}</p>
+      <p> © {currentYear} Junior Thành. Mọi quyền được bảo lưu</p>
+      <p>Thời gian hiện tại: {currentTime ?? 'Loading...'}</p> {/* Display a loading message until time is set */}
           <p>Ý tưởng Design: <a href="https://theartofdocumentary.com/" target="_blank">The Art Of Documentary</a></p>
       </div>
     </footer>

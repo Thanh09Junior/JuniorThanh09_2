@@ -88,7 +88,7 @@ const FAQ = () => {
             </div>
             <div className={styles.SchoolLogo} data-aos="fade-up" data-aos-duration="1000">
                 <div>
-                    <img src="/Logo-DH-Mo-TPHCM-OU.webp"/>
+                    <img src="/Logo-DH-Mo-TPHCM-OU.webp" alt="Logo trường đại học Mở TP.Hồ Chí Minh"/>
                 </div>
                 <p>Sinh viên trường đại học Mở TP.Hồ Chí Minh</p>
                 <p>Chúc mọi người một ngày làm việc năng suất</p>

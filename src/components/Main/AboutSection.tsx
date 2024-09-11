@@ -39,7 +39,7 @@ const AboutSection = () => {
             </div>
          </div>
          <div className={styles.imageContainer} data-aos="fade-left" data-aos-duration="1000">
-          <img src="/me1.jpg" alt="About Me" className={styles.image}  title="Chiến dịch nói không với đồ nhựa."/>
+            <img src="/me1.webp" alt="About Me" className={styles.image}  title="Chiến dịch nói không với đồ nhựa."/>
           <div>
             <p>Học kì 2 - Cơ sở: Nhà Bè.</p>
           </div>

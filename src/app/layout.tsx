@@ -12,11 +12,14 @@ import Preloader from '@/components/preloader';
 
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
+  
     useEffect(() => {
         AOS.init({
           easing: 'ease-out-quad',
           duration: 1000,
         });
+
+
         const script = document.createElement('script');
         script.src = "//code.tidio.co/vzjsg9odki0uznonmz8yndf4ipecdacg.js"; // Thay đổi URL theo mã nhúng của Lyro AI
         script.async = true;
@@ -28,7 +31,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         };
       }, [])
   return (
-    <html lang="en">
+    <html lang="vi" title="Website portfolio của Junior Thành">
       <AppHead />
       <body>
       <Preloader />
